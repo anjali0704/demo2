@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | RiseCap</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f3f6fa;
+        }
+
+        .header {
+            background: #0a3d62;
+            padding: 22px;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .contact-section {
+            display: flex;
+            max-width: 950px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 18px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .left {
+            width: 40%;
+            background: #0a3d62;
+            color: white;
+            padding: 40px;
+        }
+
+        .left h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .left p {
+            line-height: 1.6;
+            opacity: 0.9;
+        }
+
+        .info {
+            margin-top: 30px;
+        }
+
+        .info p {
+            margin: 12px 0;
+            font-size: 15px;
+            opacity: 0.95;
+        }
+
+        .right {
+            width: 60%;
+            padding: 40px;
+        }
+
+        .right h3 {
+            font-size: 24px;
+            color: #0a3d62;
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 12px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 14px;
+            border-radius: 10px;
+            border: none;
+            font-size: 16px;
+            background: #0a3d62;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #082c46;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                flex-direction: column;
+            }
+            .left, .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">Contact Us</div>
+
+    <div class="contact-section">
+
+        <div class="left">
+            <h2>Get in Touch</h2>
+            <p>We are here to help you with any investment or share market queries.</p>
+
+            <div class="info">
+                <p><strong>Email:</strong> support@risecap.com</p>
+                <p><strong>Phone:</strong> +91 90000 12345</p>
+                <p><strong>Address:</strong> Rajkot, Gujarat</p>
+                <p><strong>Working Hours:</strong> Mon–Sat, 9 AM – 6 PM</p>
+            </div>
+        </div>
+
+        <div class="right">
+            <h3>Send Us a Message</h3>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Email Address" required>
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
